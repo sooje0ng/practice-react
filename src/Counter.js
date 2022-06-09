@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
-const Counter = () => {
+const Counter = ({ initialValue }) => {
+  console.log(initialValue);
   //0에서 출발 -> useState(0)이라는게 그 뜻임. 그러므로 count가 0이 되는거임.
   //1씩 증가
   //1씩 감소
@@ -27,4 +28,7 @@ const Counter = () => {
   );
 };
 
+Counter.defaultProps = {
+  initialValue: 0,
+};
 export default Counter;
