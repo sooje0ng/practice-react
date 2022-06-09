@@ -1,12 +1,13 @@
 import './App.css';
+import MyHeader from './MyHeader';
 
 function App() {
   let name = '한수정';
   return (
     <div className="App">
-      <header className="App-header">
-        <h2>안녕 리액트 {name}</h2>
-      </header>
+      <MyHeader />
+      <h2>안녕 리액트 {name}</h2>
+      <b id="bold_text">React.js</b>
     </div>
   );
 }
