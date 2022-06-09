@@ -1,4 +1,5 @@
 import './App.css';
+import Counter from './Counter';
 import MyHeader from './MyHeader';
 
 function App() {
@@ -6,8 +7,7 @@ function App() {
   return (
     <div className="App">
       <MyHeader />
-      <h2>안녕 리액트 {name}</h2>
-      <b id="bold_text">React.js</b>
+      <Counter />
     </div>
   );
 }
