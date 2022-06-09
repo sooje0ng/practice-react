@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import OddEvenResult from './OddEvenResult';
 const Counter = ({ initialValue }) => {
   console.log(initialValue);
   //0에서 출발 -> useState(0)이라는게 그 뜻임. 그러므로 count가 0이 되는거임.
@@ -24,6 +24,7 @@ const Counter = ({ initialValue }) => {
       <h2>{count}</h2>
       <button onClick={onIncrease}>+</button>
       <button onClick={onDecrease}>-</button>
+      <OddEvenResult count={count} />
     </div>
   );
 };
